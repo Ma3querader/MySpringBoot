@@ -7,16 +7,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @Date: 2020/5/26 15:48
  * @Version 1.0
  */
-@ConfigurationProperties(prefix = "service.properties")
+@ConfigurationProperties(prefix = "hello")
 public class HelloProperties {
 
-    private static final String SERVICE_NAME = "test-service";
+    private static final String MSG = "world";
 
-    private String msg = SERVICE_NAME;
-
-    public static String getServiceName() {
-        return SERVICE_NAME;
-    }
+    private String msg = MSG ;
 
     public String getMsg() {
         return msg;

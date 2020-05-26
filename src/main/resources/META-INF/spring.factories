@@ -1,2 +1,2 @@
 
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.lakers.cc.HelloServiceAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.lakers.cc.HelloAutoConfiguration
