@@ -1,7 +1,5 @@
 package com.lakers.controller;
 
-import com.lakers.bean.ConnectionSettings;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,13 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Autowired
-    private ConnectionSettings conn;
-
     @RequestMapping("/hello")
     public String hello() {
-        String s = conn.toString();
-        System.out.println(s);
         return "fuck";
     }
 
